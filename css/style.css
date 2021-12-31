@@ -8,8 +8,8 @@
 
 @media (min-width: 360px){
     body{
-        background-color: rgb(88,0,233);
-        background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
+        background: rgb(102,0,172);
+background: linear-gradient(90deg, rgba(102,0,172, 1) 0%, rgba(117,0,112,1) 100%);
         overflow-y: hidden;
     }
     /*Header*/
@@ -108,7 +108,7 @@ background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
         margin-left: 80%;
         bottom: 55px;
         flex-direction: column;
-        width: 19%;
+        width: 62px;
     }
 
     #second-button-group > p{
@@ -119,20 +119,32 @@ background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
     #numeric-keyboard{
         display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 76%;
         height: 45%;
         position: relative;
-        bottom: 250px;
+        bottom: 255px;
         color: #fff;
         font-family: 'Montserrat', sans-serif;
-        font-size: 36px;
+        font-size: 30px;
         justify-content: space-between;
         align-items: center;
         font-weight: bold;
+        padding: 0px 20px 0px 20px;
     }
 
-    #numeric-keyboard p{
-        margin: 0px 32px;
+    #numeric-keyboard div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    #one-two-three{
+        margin-left: 8px;
+    }
+
+    #zero{
+        margin-left: 8px;
     }
 
     #equal{
@@ -142,9 +154,8 @@ background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
         background: rgb(233,0, 129, 100%);
 background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 93%);
         color: #fff;
-        position: relative;
-        top: -310px;
-        left:  81.5%;
+        position: absolute;
+        top: 43vh;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
