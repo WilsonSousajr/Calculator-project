@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 360px){
+    body{
+        background-color: rgb(88,0,233);
+        background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
+        overflow-y: hidden;
+    }
+    /*Header*/
+
+    #header-div{
+        width: 100vw;
+        height: 274px;
+        background: rgb(88,0,233);
+background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #resul-frame{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    } 
+    #resul-frame img{
+        min-width: 24px;
+        min-height: 24px;
+        max-width: 50px;
+        max-height: 50px;
+        width: 6%;
+        height: 6%;
+    }
+
+    #img-2{
+        width: 6%;
+        height: 6%;
+        align-self: flex-end;
+    }
+
+    #img-group-1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .break{
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    
+    #img-group-2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        height: 80%;
+    }
+
+    #resul{
+        align-self: center;
+        font-weight: bold;
+    }
+
+    #img-3{
+        align-self: flex-start !important;
+    }
+    /*End Header*/
+
+    /*Main*/
+    Main img{
+        width: 37px;
+        height: 37px;
+    }
+    #main-div{
+        width: 100%;
+        height: 100vh;
+        background-color: #1A1D24;
+        border-radius: 10px 10px 0px 0px;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    #first-button-group{
+        
+        width: 76%;
+        height: 54px;
+        
+    }
+
+    .button-groups{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+        background-color: #14171E;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+    }
+
+    #second-button-group{
+        position: relative;
+        margin-left: 80%;
+        bottom: 55px;
+        flex-direction: column;
+        width: 19%;
+    }
+
+    #second-button-group > p{
+        margin-bottom: 18px;
+        margin-top: 18px;
+    }
+
+    #numeric-keyboard{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 45%;
+        position: relative;
+        bottom: 250px;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    #numeric-keyboard p{
+        margin: 0px 32px;
+    }
+
+    #equal{
+        display: flex;
+        width: 52px;
+        height: 44px;
+        background: rgb(233,0, 129, 100%);
+background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 93%);
+        color: #fff;
+        position: relative;
+        top: -310px;
+        left:  81.5%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .gradient{
+       background-image: linear-gradient(to bottom, #E90081, #5800E9);
+       background-clip: text;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       color: #000;
+    }
+
+    #moreandminus{
+        font-size: 15px;
+    }
+    /*End Main*/
+}
