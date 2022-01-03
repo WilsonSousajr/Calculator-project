@@ -16,41 +16,47 @@ const keys = [
 
 ]
 
-const metods = {
+const methods = {
 
     sum: document.querySelector("#sum"),
     subtraction: document.querySelector("#subtraction"),
     multiply: document.querySelector("#multiply"),
     division: document.querySelector("#division"),
     percent: document.querySelector("#percent"),
-    equal: document.querySelector("#equal")
+    equal: document.querySelector("#equal"),
+    sum_method: function(num1, num2){
+        resul = num1 + num2
+        return resul
+    }
 
 }
 
-metods.sum.addEventListener("click", function(){
+methods.sum.addEventListener("click", function(){
     resul_view.innerHTML += "+"
 })
-metods.subtraction.addEventListener("click", function(){
+methods.subtraction.addEventListener("click", function(){
     resul_view.innerHTML += "-"
 })
-metods.multiply.addEventListener("click", function(){
+methods.multiply.addEventListener("click", function(){
     resul_view.innerHTML += "X"
 })
-metods.division.addEventListener("click", function(){
+methods.division.addEventListener("click", function(){
     resul_view.innerHTML += "/"
 })
-metods.percent.addEventListener("click", function(){
+methods.percent.addEventListener("click", function(){
     resul_view.innerHTML += "%"
 })
-metods.equal.addEventListener("click", function(){
+methods.equal.addEventListener("click", function(){
     let resul_view_innerHTML = resul_view.innerHTML
-    console.log(onlyNumbers(resul_view_innerHTML))
+    let num1 = Number(resul_view_innerHTML.substring(0, resul_view_innerHTML.indexOf("+")));
+    let num2 = Number(resul_view_innerHTML.substring( resul_view_innerHTML.indexOf("+") + 1));
+    resul_view.innerHTML = methods.sum_method(num1,num2)
+    console.log(methods.sum_method(num1, num2))
 })
 
-function onlyNumbers(string){
-    let num_to_string = string.replace(/[^0-9]/g, '')
-    return parseInt(num_to_string)
-}
+
+
+
 
 for(let i = 0; i < keys.length; i++){
     keys[i].addEventListener('click', function(){
