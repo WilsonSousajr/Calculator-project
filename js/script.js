@@ -24,8 +24,8 @@ const methods = {
     division: document.querySelector("#division"),
     percent: document.querySelector("#percent"),
     equal: document.querySelector("#equal"),
-    sum_method: function(num1, num2){
-        resul = num1 + num2
+    sum_method: function(initial, middle, end){
+        let resul = initial + middle + end
         return resul
     }
 
@@ -48,13 +48,18 @@ methods.percent.addEventListener("click", function(){
 })
 methods.equal.addEventListener("click", function(){
     let resul_view_innerHTML = resul_view.innerHTML
-    let num1 = Number(resul_view_innerHTML.substring(0, resul_view_innerHTML.indexOf("+")));
-    let num2 = Number(resul_view_innerHTML.substring( resul_view_innerHTML.indexOf("+") + 1));
-    resul_view.innerHTML = methods.sum_method(num1,num2)
-    console.log(methods.sum_method(num1, num2))
+    let initial = Number(resul_view_innerHTML.substring(0, resul_view_innerHTML.indexOf("+")));
+    let n = resul_view_innerHTML.lastIndexOf('+')
+    let end = Number(resul_view_innerHTML.substring(n + 1));
+    let result = resul_view_innerHTML.match(/(?<=\+)\w+(?=\+)/g) || [];
+    let result_number = result.map(function(x){
+        return parseInt(x, 10)
+    })
+
+    let sum_result_number = result_number.reduce((a, b) => a + b, 0)
+    resul_view.innerHTML = methods.sum_method(initial, sum_result_number , end)
+    methods.sum_method(initial , sum_result_number, end)
 })
-
-
 
 
 
