@@ -1,4 +1,7 @@
 let resul_view = document.querySelector("#resul-view")
+let num = [];
+let num_numbered;
+
 
 const keys = [
 
@@ -16,18 +19,22 @@ const keys = [
 
 ]
 
-const methods = {
+for(let i = 0; i < keys.length; i++){
+    keys[i].addEventListener('click', function(){
+        keys[i] = i
+        resul_view.innerHTML += keys[i]
+    })
+}
 
+const methods = {
     sum: document.querySelector("#sum"),
     subtraction: document.querySelector("#subtraction"),
     multiply: document.querySelector("#multiply"),
     division: document.querySelector("#division"),
     percent: document.querySelector("#percent"),
+    ac: document.querySelector('#clear'),
+    backspace: document.querySelector("#backspace"),
     equal: document.querySelector("#equal"),
-    sum_method: function(initial, middle, end){
-        let resul = initial + middle + end
-        return resul
-    }
 
 }
 
@@ -38,7 +45,7 @@ methods.subtraction.addEventListener("click", function(){
     resul_view.innerHTML += "-"
 })
 methods.multiply.addEventListener("click", function(){
-    resul_view.innerHTML += "X"
+    resul_view.innerHTML += "*"
 })
 methods.division.addEventListener("click", function(){
     resul_view.innerHTML += "/"
@@ -46,28 +53,12 @@ methods.division.addEventListener("click", function(){
 methods.percent.addEventListener("click", function(){
     resul_view.innerHTML += "%"
 })
-methods.equal.addEventListener("click", function(){
-    let resul_view_innerHTML = resul_view.innerHTML
-    let initial = Number(resul_view_innerHTML.substring(0, resul_view_innerHTML.indexOf("+")));
-    let n = resul_view_innerHTML.lastIndexOf('+')
-    let end = Number(resul_view_innerHTML.substring(n + 1));
-    let result = resul_view_innerHTML.match(/(?<=\+)\w+(?=\+)/g) || [];
-    let result_number = result.map(function(x){
-        return parseInt(x, 10)
-    })
-
-    let sum_result_number = result_number.reduce((a, b) => a + b, 0)
-    resul_view.innerHTML = methods.sum_method(initial, sum_result_number , end)
-    methods.sum_method(initial , sum_result_number, end)
+methods.ac.addEventListener("click", function(){
+    resul_view.innerHTML = ""
 })
-
-
-
-for(let i = 0; i < keys.length; i++){
-    keys[i].addEventListener('click', function(){
-        keys[i] = i
-        resul_view.innerHTML += keys[i]
-    })
-}
-
-
+methods.backspace.addEventListener("click", function(){
+    resul_view.innerHTML =  resul_view.innerHTML.slice(0,-1)
+})
+methods.equal.addEventListener("click", function(){
+    resul_view.innerHTML = eval(resul_view.innerHTML)
+})
