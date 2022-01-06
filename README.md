@@ -1,6 +1,6 @@
 <h1 align="center">√ Calculator</h1>
 
-<p align="center">A website that emulates a calculator! Here you can access: https://willnapolitano.github.io/Calculator/</p>
+<p align="center">A website that emulates a calculator!</p>
 
 <br/>
 <br/>
