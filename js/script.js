@@ -35,6 +35,11 @@ const methods = {
     ac: document.querySelector('#clear'),
     backspace: document.querySelector("#backspace"),
     equal: document.querySelector("#equal"),
+    point: document.querySelector("#point"),
+    percent_method: function() {
+        let result_view = eval(resul_view.innerHTML)
+        resul_view.innerHTML = result_view / 100
+    }
 
 }
 
@@ -51,7 +56,7 @@ methods.division.addEventListener("click", function(){
     resul_view.innerHTML += "/"
 })
 methods.percent.addEventListener("click", function(){
-    resul_view.innerHTML += "%"
+    methods.percent_method()
 })
 methods.ac.addEventListener("click", function(){
     resul_view.innerHTML = ""
@@ -59,6 +64,10 @@ methods.ac.addEventListener("click", function(){
 methods.backspace.addEventListener("click", function(){
     resul_view.innerHTML =  resul_view.innerHTML.slice(0,-1)
 })
+methods.point.addEventListener("click", function(){
+    resul_view.innerHTML += "."
+})
 methods.equal.addEventListener("click", function(){
     resul_view.innerHTML = eval(resul_view.innerHTML)
 })
+
