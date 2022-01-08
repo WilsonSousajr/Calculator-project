@@ -25,7 +25,7 @@
  
 <h1 id="objective">🎯 Objective</h1>
  
-<p>Treinar meus conhecimentos em Javascript Css e HTML além de também treinar meus conhecimentos em responsividade, mobile first, ui/ux desing, tudo isso com base no projeto desenvolvido no Figma: https://www.figma.com/file/f8TyTQsOo1HDj9yx8czu8Q/Calculator
+<p>Train my knowledge in javascript css and html as well as train my knowledge in responsiveness, mobile first, ui/ux desing, all based on the project developed in figma:https://www.figma.com/file/f8TyTQsOo1HDj9yx8czu8Q/Calculator
 <br/><br/>
  
 <h1 id="installation">⚙️ Installation</h1>
