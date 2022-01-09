@@ -68,7 +68,7 @@ background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
     }
 
     #img-3{
-        align-self: flex-start !important;
+        align-self: flex-start;
     }
     /*End Header*/
 
@@ -180,4 +180,54 @@ background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 9
         margin-left: 5px;
     }
     /*End Main*/
+}
+
+@media(min-width: 768px){
+    /*HEADER*/
+        #img-1{
+            display: none;
+        }
+
+        #img-group-1{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #img-group-1{
+            width: 100vw;
+        }
+
+        #img-3{
+            position: absolute;
+            top: 15px;
+        }
+    /*END HEADER*/
+
+    /*MAIN*/
+        #main-div{
+            position: absolute;
+            top: 200px
+        }
+
+        #first-button-group{
+            width: 40%;
+            margin: 0 auto;
+            justify-content: space-around;
+        }
+
+        #second-button-group{
+            bottom: -20px;
+        }
+
+        #numeric-keyboard{
+            width: 45%;
+            margin: 0 auto;
+        }
+
+        #equal{
+            width: 550%;
+            right: 195%;
+        }
+        
+    /*END MAIN*/
 }
