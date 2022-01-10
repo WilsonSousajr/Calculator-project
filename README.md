@@ -6,7 +6,7 @@
 <br/>
 
 <p align="center">
- <a href="#objective">Objective</a> • 
+ <a href="#objective">Objectives</a> • 
  <a href="#installation">Installation</a> • 
  <a href="#tecnologies">Tecnologies</a> • 
  <a href="dependencies">Dependencies</a>
@@ -23,7 +23,7 @@
  
 <br/><br/>
  
-<h1 id="objective">🎯 Objective</h1>
+<h1 id="objective">🎯 Objectives</h1>
  
 <p>Train my knowledge in javascript css and html as well as train my knowledge in responsiveness, mobile first, ui/ux desing, all based on the project developed in figma:https://www.figma.com/file/f8TyTQsOo1HDj9yx8czu8Q/Calculator
 <br/><br/>
