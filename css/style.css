@@ -30,22 +30,32 @@ background: linear-gradient(90deg, rgba(102,0,172, 1) 0%, rgba(117,0,112,1) 100%
     }
     
     #more-calculators p{
-
         font-weight: bold;
-        font-size: 36px;
+        font-size: 25px;
     }
 
+    #close{
+        padding: 10px;
+        padding-left: 20px;
+    }
     #calc-box-div{
         display: flex;
         justify-content: space-around;
+        margin-top: 50%;
     }
 
     .calc-box{
-        padding: 15px 0px 15px 0px;
+        padding: 22px 0px 22px 0px;
         text-align: center;
         width: 73px;
         height: 73px;
         background: #5800E9;
+        box-shadow: 1px 2px 4px 0px #000;
+    }
+
+    .selected{
+        background: rgb(233,0,129);
+background: linear-gradient(130deg, rgba(233,0,129, 1) 0%, rgba(88,0,233,1) 100%);
     }
 
     #header-div{
