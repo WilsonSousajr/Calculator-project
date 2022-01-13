@@ -64,7 +64,7 @@ background: linear-gradient(90deg, rgba(102,0,172, 1) 0%, rgba(117,0,112,1) 100%
         text-align: center;
         width: 73px;
         height: 73px;
-        background: #5800E9;
+        background: #222630;
         box-shadow: 1px 2px 4px 0px #000;
     }
 
@@ -209,13 +209,14 @@ background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
 
     #equal{
         display: flex;
-        width: 52px;
+        width: 62px;
         height: 44px;
         background: rgb(233,0, 129, 100%);
 background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 93%);
         color: #fff;
-        position: absolute;
-        top: 43vh;
+        position: relative;
+        margin-left: 80%;
+        bottom: 315px;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
@@ -245,10 +246,57 @@ background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 9
 
     html{
         overflow-x: hidden;
+        overflow-y: hidden;
     }
     body{
         overflow-x: hidden;
     }
+
+    .modal-overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #more-calculators{
+        width: 73px;
+        height: 300px;
+        background: transparent;
+        margin-top: 35vh;
+    }
+
+    #more-calculators h3{
+        display: none;
+    }
+    
+    #more-calculators p{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    #close{
+        display: none;
+    }
+    #calc-box-div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calc-box{
+        padding: 22px 0px 22px 0px;
+        text-align: center;
+        width: 73px;
+        height: 73px;
+        background: #222630;
+        box-shadow: 1px 2px 4px 0px #000;
+    }
+
+    .selected{
+        background: rgb(233,0,129);
+background: linear-gradient(130deg, rgba(233,0,129, 1) 0%, rgba(88,0,233,1) 100%);
+    }
+
     /*HEADER*/
         #img-1{
             display: none;
@@ -287,12 +335,13 @@ background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 9
 
         #numeric-keyboard{
             width: 45%;
+            top: -245px;
             margin: 0 auto;
         }
 
         #equal{
-            width: 500%;
-            right: 195%;
+            width: 45%;
+            margin: 100px auto;
         }
         
     /*END MAIN*/
