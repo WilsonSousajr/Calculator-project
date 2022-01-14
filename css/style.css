@@ -346,3 +346,116 @@ background: linear-gradient(130deg, rgba(233,0,129, 1) 0%, rgba(88,0,233,1) 100%
         
     /*END MAIN*/
 }
+
+@media(min-width: 1440px){
+    /*HEADER*/
+        #img-1{
+            display: none;
+        }
+    /*END HEADER*/
+    /*MAIN*/
+        #main-div{
+            background: #000;
+            position: absolute;
+            top: 0px;
+            width: 568px;
+            height: 1025px;
+        }
+
+        #numeric-keyboard{
+            width: 400px;
+            height: 496px;
+            position: absolute;
+            top: 220px;
+            left: 880px;
+            padding: 0px;
+        }
+
+        #second-button-group{
+            position: absolute;
+            height: 415px;
+            top: 165px;
+            left: 844px;
+            justify-content: space-between;
+        }
+
+        
+        #first-button-group{
+            position: absolute;
+            width: 500px;
+            top: 165px;
+            left: 834px;
+        }
+
+        .number{
+            width: 100px;
+            height: 100px;
+            background: #1A1D24;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+
+        #multiply{
+            position: relative;
+            bottom: 25px;
+        }
+
+
+        #division{
+            margin-bottom: 10px !important;
+            margin-top: 10px;
+        }
+
+        #subtraction{
+            position: relative;
+            bottom: 20px;
+        }
+
+        #sum{
+            position: relative;
+            bottom: 20px;
+        }
+
+        
+        #one{
+            position: relative;
+            left: -8px;
+        }
+
+        #two{
+            position: relative;
+            left: -4px;
+        }
+
+        #point{
+            position: relative;
+            left: -8px;
+        }
+
+        #zero-number{
+            position: relative;
+            left: -4px;
+        }
+
+        #backspace{
+            position: relative;
+            left: -10px;
+        }
+
+        #percent{
+            position: relative;
+            left: -15px;
+        }
+
+        #equal{
+            position: absolute;
+            width: 54px;
+            height: 100px;
+            top: 500px;
+            left: 1302px;
+        }
+
+    /*END MAIN*/
+}
