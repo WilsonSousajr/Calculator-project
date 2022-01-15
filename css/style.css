@@ -298,6 +298,13 @@ background: linear-gradient(130deg, rgba(233,0,129, 1) 0%, rgba(88,0,233,1) 100%
     }
 
     /*HEADER*/
+
+        #current-calculator{
+            position: absolute;
+            left: 240px;
+            top: -250px;
+            display: initial !important;
+        }
         #img-1{
             display: none;
         }
@@ -348,18 +355,45 @@ background: linear-gradient(130deg, rgba(233,0,129, 1) 0%, rgba(88,0,233,1) 100%
 }
 
 @media(min-width: 1440px){
+
+    body{
+        background: rgb(46,8,212);
+    }
     /*HEADER*/
+        #header-div{
+            background: rgb(46,8,212);
+        }
         #img-1{
             display: none;
+        }
+
+        #resul-frame{
+            background: rgb(46,8,212);
+            position: absolute;
+            top: -230px;
+            left: 460px;
+
         }
     /*END HEADER*/
     /*MAIN*/
         #main-div{
-            background: #000;
+            background: #1A1D24;
             position: absolute;
             top: 0px;
             width: 568px;
             height: 1025px;
+        }
+
+        #calc-box-div{
+            position: absolute;
+            left: 250px;
+            top: -190px;
+            height: 500px;
+        }
+
+        #current-calculator{
+            position: absolute;
+            display: inline;
         }
 
         #numeric-keyboard{
@@ -369,6 +403,7 @@ background: linear-gradient(130deg, rgba(233,0,129, 1) 0%, rgba(88,0,233,1) 100%
             top: 220px;
             left: 880px;
             padding: 0px;
+            z-index: 10;
         }
 
         #second-button-group{
