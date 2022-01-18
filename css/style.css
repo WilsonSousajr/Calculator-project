@@ -47,6 +47,10 @@ background: linear-gradient(90deg, rgba(102,0,172, 1) 0%, rgba(117,0,112,1) 100%
         margin-top: 37px;
         font-weight: bold;
     }
+
+    #more-calculators h4{
+        display: none;
+    }
     
     #more-calculators p{
         font-weight: bold;
@@ -272,6 +276,14 @@ background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 9
     }
 
     #more-calculators h3{
+        display: none !important;
+    }
+
+    #more-calculators h4{
+        display: none !important;
+    }
+
+    #current-calculator{
         display: none !important;
     }
     
