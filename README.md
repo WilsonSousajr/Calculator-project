@@ -9,7 +9,8 @@
  <a href="#objective">Objectives</a> • 
  <a href="#installation">Installation</a> • 
  <a href="#tecnologies">Tecnologies</a> • 
- <a href="dependencies">Dependencies</a>
+ <a href="dependencies">Dependencies</a> • 
+ <a href="printscreens">Printscreens</a> • 
  <a href="#contributions">Contribution</a> •  
  <a href="#author">Author</a>
 </p>
