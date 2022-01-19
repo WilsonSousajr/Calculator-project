@@ -49,7 +49,7 @@ background: linear-gradient(90deg, rgba(102,0,172, 1) 0%, rgba(117,0,112,1) 100%
     }
 
     #more-calculators h4{
-        display: none;
+        visibility: hidden;
     }
     
     #more-calculators p{
@@ -280,7 +280,7 @@ background: linear-gradient(140deg, rgb(233,0, 129, 100%) 0%, rgba(88,0,233,1) 9
     }
 
     #more-calculators h4{
-        display: none !important;
+        visibility: hidden;
     }
 
     #current-calculator{
@@ -414,16 +414,25 @@ background: linear-gradient(140deg, rgba(88,0,233,1) 0%, rgba(117,0,112,1) 93%);
     }
 
     #more-calculators h4{
-        display: initial;
+        visibility: visible;
         width: 500%;
-        top: -20%;
+        top: -15%;
         left: -130%;
         font-size: 35px;
     }
 
-    
+    #img-2{
+        position: absolute;
+        top: 10.64%;
+        left: 60%;
+        z-index: 999;
+    }
 
-    
+    #historical{
+        width: 40px !important;
+        height: 40px !important;
+    }
+
     /*END HEADER*/
 
     /*MAIN*/
