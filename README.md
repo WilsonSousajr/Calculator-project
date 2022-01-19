@@ -1,6 +1,7 @@
 <h1 align="center">√ Calculator</h1>
 
 <p align="center">A website that emulates a calculator!</p>
+<p align="center" ><a href="https://project-calcullator.netlify.app/">Access the website</a></p>
 
 <br/>
 <br/>
