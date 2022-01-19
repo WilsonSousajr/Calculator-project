@@ -95,6 +95,18 @@ cd Calculator
  
 <br/><br/>
  
+<h1 id="printscreen">📷 Printscreen</h1>
+
+<h3>Mobile</h3>
+<img src="./printscreens/mobile.png">
+<img src="./printscreens/more-calculators.png">
+<h3>Tablets</h3>
+<img src="./printscreens/tablets.png">
+<h3>Desktop</h3>
+<img src="./printscreens/desktop.png">
+
+<br/><br/>
+ 
 <h1 id="contributions">👥 Contribution</h1>
 
 <p>You can tell me about issues in the project! Or add new funtionalities and make a pull request!</p>
